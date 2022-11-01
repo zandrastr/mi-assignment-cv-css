@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    //outline: 1px solid red;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- PAGE 1 ---------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------- HEADER ---------------------------------------------*/
+.header-top {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    background: hsla(0, 0%, 100%, 1);
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(276, 100%, 94%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(276, 100%, 94%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(276, 100%, 94%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#F3E1FF", GradientType=1);
+}
+
+.desktop-top-color {
+    display: none;
+}
+
+.header-links {
+    display: flex;
+    justify-content: center;
+}
+
+.header-headings {
+    background-color: rgb(252, 252, 252);
+}
+
+header h1 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+header h2 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/*--------------------------------------- PROFILE PICTURE -----------------------------------------*/
+
+.profile-picture {}
+
+/*---------------------------------------- EXTERNAL LINKS -----------------------------------------*/
+
+.linkedin {}
+
+.github {}
+
+/*-------------------------------------------- ABOUT ----------------------------------------------*/
+
+.about {
+    margin: 10px;
+}
+
+.about h3 {}
+
+.about p {}
+
+
+/*-------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------- PAGE 2 ---------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------*/
+
+.tech-stack {
+    margin: 10px;
+}
+
+.tech-stack h3 {}
+
+.tech-stack ul {}
+
+.tech-stack li {}
+
+.projects {
+    margin: 10px;
+}
+
+
+.education {
+    margin: 10px;
+}
+
+.education h3 {}
+
+.education ul {}
+
+.education li {}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3 {}
+
+footer p {}
+
+
+/*-------------------------------------------------------------------------------------------------*/
+/*-------------------------------------- MEDIA QUERIES --------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+    /*tablet*/
+
+}
+
+@media screen and (min-width: 1024px) {
+    /*desktop*/
+
+    .page-1,
+    .page-2 {
+        min-height: 100vh;
+    }
+
+    .page-1 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-top {
+        background: white;
+        margin: 0 auto;
+    }
+
+    .header-links {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        gap: 10px;
+    }
+
+    .desktop-top-color {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: hsla(0, 0%, 100%, 1);
+        background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(276, 100%, 94%, 1) 100%);
+        background: -moz-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(276, 100%, 94%, 1) 100%);
+        background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(276, 100%, 94%, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#F3E1FF", GradientType=1);
+    }
+
+    .about {
+        text-align: center;
+    }
+}
