@@ -63,9 +63,13 @@ header h2 {
     margin: 5px;
 }
 
-/*-------------------- ABOUT / TECH STACK / PROJECTS / EDUCATION / CONTACT ------------------------*/
+/*-------------------- ABOUT / TECH STACK / PROJECTS / EDUCATION / FOOTER ------------------------*/
 
-.about, .tech-stack, .projects, .education, .contact {
+.about,
+.tech-stack,
+.projects,
+.education,
+.footer {
     margin: 25px 15px 10px 15px;
     border-top: 3px solid rgba(161, 117, 255, 0.5);
 }
@@ -74,10 +78,11 @@ h3 {
     text-align: center;
     font-size: 0.9rem;
     text-transform: uppercase;
-    margin: 10px;
+    margin: 15px;
 }
 
-p, ul {
+p,
+ul {
     font-size: 0.8rem;
 }
 
@@ -87,68 +92,118 @@ p, ul {
 
 /*------------------------------------------ TECH STACK ------------------------------------------*/
 
-.tech-stack ul {
-
-}
-
-.tech-stack li {
-
+.tech-stack-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
 }
 
 /*------------------------------------------- PROJECTS -------------------------------------------*/
 
-.projects {
-
+.project-1, .project-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
 }
 
-.projects h3 {
-
+.projects img {
+    padding: 7px;
 }
 
-.education {
-    margin: 10px;
+.project-1 {
+    
+}
+
+.projects p {
+    text-align: justify;
+}
+
+.projects a {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.projects a:hover {
+    color: rgb(204, 20, 210);
 }
 
 /*------------------------------------------- EDUCATION -------------------------------------------*/
 
-.education h3 {}
+.education {
+    margin-bottom: 25px;
+}
 
-.education ul {}
+.education ul {
+    padding-top: 5px;
+}
 
-.education li {}
+.education li {
+    margin: 15px 0;
+}
 
 /*--------------------------------------------- FOOTER ---------------------------------------------*/
 
-footer {
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 12px;
+    border-top: none;
+    background-color: rgba(216, 196, 225, 0.8);
 }
 
-footer h3 {}
+.footer h4 {
+    font-style: normal;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
 
-footer p {}
+.footer p {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 0.7rem;
+    margin: 3px;
+}
+
+.footer a {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 0.7rem;
+}
+
+.location, .email {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 3px;
+}
+
 
 
 /*-------------------------------------------------------------------------------------------------*/
 /*--------------------------------- MEDIA QUERIES - TABLET ----------------------------------------*/
 /*-------------------------------------------------------------------------------------------------*/
 
-@media screen and (min-width: 768px) { /*tablet*/
+@media screen and (min-width: 768px) {
+    /*tablet*/
 
-/*--------------------------------------------TABLET - HEADER ---------------------------------------------*/
+    /*--------------------------------------------TABLET - HEADER ---------------------------------------------*/
     .header-top {
         gap: 10px;
     }
-    
+
     .header-headings {
         margin-left: 20px;
     }
-    
+
     header h1 {
         font-size: 2rem;
     }
-    
+
     header h2 {
         font-size: 1.2rem;
     }
@@ -160,15 +215,19 @@ footer p {}
         top: 20px;
     }
 
-/*---------------------------------------- TABLET - SOCIAL LINKS -------------------------------------------*/
+    /*---------------------------------------- TABLET - SOCIAL LINKS -------------------------------------------*/
     .social-links {
         gap: 25px;
         margin-top: 20px;
     }
 
-/*-------------------- TABLET - ABOUT / TECH STACK / PROJECTS / EDUCATION / CONTACT ------------------------*/
+    /*-------------------- TABLET - ABOUT / TECH STACK / PROJECTS / EDUCATION / CONTACT ------------------------*/
 
-    .about, .tech-stack, .projects, .education, .contact {
+    .about,
+    .tech-stack,
+    .projects,
+    .education,
+    .footer {
         margin: 35px 30px 10px 30px;
         border-top: 3px solid rgba(161, 117, 255, 0.5);
     }
@@ -178,10 +237,25 @@ footer p {}
         margin: 15px;
     }
 
-    p, ul {
+    p,
+    ul {
         font-size: 1rem;
     }
 
+    .tech-stack-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer {
+        width: 100%;
+        margin: 0;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 1rem;
+    }
 }
 
 
@@ -190,7 +264,8 @@ footer p {}
 /*---------------------------------- MEDIA QUERIES: DESKTOP ---------------------------------------*/
 /*-------------------------------------------------------------------------------------------------*/
 
-@media screen and (min-width: 1024px) { /*desktop*/
+@media screen and (min-width: 1024px) {
+    /*desktop*/
 
     .page-1,
     .page-2 {
@@ -201,9 +276,7 @@ footer p {}
         align-items: center;
     }
 
-    .page-1 {
-
-    }
+    .page-1 {}
 
     .desktop-top-color {
         display: block;
@@ -218,7 +291,8 @@ footer p {}
         background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(276, 100%, 94%, 1) 100%);
         filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#F3E1FF", GradientType=1);
     }
-/*-------------------------------------------- DESKTOP - HEADER ---------------------------------------------*/
+
+    /*-------------------------------------------- DESKTOP - HEADER ---------------------------------------------*/
     .header-top {
         background: white;
     }
@@ -226,22 +300,22 @@ footer p {}
     .header-headings {
         margin-left: 25px;
     }
-    
+
     header h1 {
         font-size: 4rem;
     }
-    
+
     header h2 {
         font-size: 1.8rem;
     }
-    
+
     .profile-picture img {
         border: 6px solid rgb(161, 117, 255);
         padding: 6px;
         width: 300px;
     }
 
-/*---------------------------------------- DESKTOP - SOCIAL LINKS -----------------------------------------*/
+    /*---------------------------------------- DESKTOP - SOCIAL LINKS -----------------------------------------*/
     .social-links {
         margin: 0;
         position: absolute;
@@ -250,25 +324,45 @@ footer p {}
         gap: 20px;
     }
 
-/*-------------------- DESKTOP - ABOUT / TECH STACK / PROJECTS / EDUCATION / CONTACT ------------------------*/
+    /*-------------------- DESKTOP - ABOUT / TECH STACK / PROJECTS / EDUCATION / CONTACT ------------------------*/
 
     .about {
         border-top: none;
         max-width: 800px;
+        /* margin-top: 60px; */
+        position: absolute;
+        bottom: 50px;
     }
-    
-    .tech-stack, .projects, .education, .contact {
+
+    .about h3 {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .tech-stack,
+    .projects,
+    .education {
         margin: 35px 30px 10px 30px;
+        border-top: none;
+        width: 800px;
         border-top: 3px solid rgba(161, 117, 255, 0.5);
-        max-width: 800px;
     }
 
     h3 {
         font-size: 1.2rem;
         margin: 15px;
+        text-align: left;
     }
 
-    p, ul {
+    p,
+    ul {
         font-size: 1rem;
     }
+
+    .tech-stack-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
+
+/* border-top: 3px solid rgba(161, 117, 255, 0.5); */
