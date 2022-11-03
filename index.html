@@ -34,11 +34,20 @@
 
             <header class="header-top">
                     <figure class="profile-picture">
-                        <img src="images/sandra-frontend-developer.jpg" alt="Sandra's headshot." width="150" height="112">
+                        <img srcset="
+                        images/sandra-frontend-developer-110px.jpg 110w,
+                        images/sandra-frontend-developer-200px.jpg 200w,
+                        images/sandra-frontend-developer-300px.jpg 300w"
+                        sizes="
+                        (max-width: 767px) 110px,
+                        (max-width: 1023px) 200px,
+                        300px"
+                        src="images/sandra-frontend-developer-300px.jpg" 
+                        alt="Sandra's smiling headshot in black and white."> 
                     </figure>
                     <div class="header-headings">
                         <h1>Hi, im Sandra!</h1>
-                        <h2>A creative front end developer in the making 💻🔮</h2>
+                        <h2> A creative front end developer in the making.</h2>
                     </div>
             </header>
 
