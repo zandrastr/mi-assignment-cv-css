@@ -70,7 +70,7 @@ header h2 {
 .projects,
 .education,
 .footer {
-    margin: 25px 15px 10px 15px;
+    margin: 30px 15px;
     border-top: 3px solid rgba(161, 117, 255, 0.5);
 }
 
@@ -78,7 +78,8 @@ h3 {
     text-align: center;
     font-size: 0.9rem;
     text-transform: uppercase;
-    margin: 15px;
+    margin-top: 25px;
+    margin-bottom: 17px;
 }
 
 p,
@@ -100,19 +101,15 @@ ul {
 
 /*------------------------------------------- PROJECTS -------------------------------------------*/
 
-.project-1, .project-2 {
+.project-1,
+.project-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8px 0;
 }
 
 .projects img {
-    padding: 7px;
-}
-
-.project-1 {
-    
+    margin-bottom: 7px;
 }
 
 .projects p {
@@ -121,8 +118,8 @@ ul {
 
 .projects a {
     font-size: 0.8rem;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-top: 3px;
+    margin-bottom: 25px;
 }
 
 .projects a:hover {
@@ -131,25 +128,18 @@ ul {
 
 /*------------------------------------------- EDUCATION -------------------------------------------*/
 
-.education {
-    margin-bottom: 25px;
-}
-
-.education ul {
-    padding-top: 5px;
-}
-
 .education li {
-    margin: 15px 0;
+    margin-bottom: 15px;
 }
 
 /*--------------------------------------------- FOOTER ---------------------------------------------*/
 
 .footer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 3px;
     margin: 0;
     padding: 12px;
     border-top: none;
@@ -157,8 +147,9 @@ ul {
 }
 
 .footer h4 {
+    margin-top: 3px;
     font-style: normal;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: bold;
 }
 
@@ -175,14 +166,13 @@ ul {
     font-size: 0.7rem;
 }
 
-.location, .email {
+.location,
+.email {
     display: flex;
     justify-content: center;
     gap: 5px;
     margin: 3px;
 }
-
-
 
 /*-------------------------------------------------------------------------------------------------*/
 /*--------------------------------- MEDIA QUERIES - TABLET ----------------------------------------*/
@@ -221,20 +211,20 @@ ul {
         margin-top: 20px;
     }
 
-    /*-------------------- TABLET - ABOUT / TECH STACK / PROJECTS / EDUCATION / CONTACT ------------------------*/
+    /*-------------------- TABLET - ABOUT / TECH STACK / PROJECTS / EDUCATION / FOOTER ------------------------*/
 
     .about,
     .tech-stack,
     .projects,
-    .education,
-    .footer {
-        margin: 35px 30px 10px 30px;
-        border-top: 3px solid rgba(161, 117, 255, 0.5);
+    .education {
+        margin: 40px;
+        border-top: 4px dotted rgba(161, 117, 255, 0.5);
     }
 
     h3 {
         font-size: 1.2rem;
-        margin: 15px;
+        margin-top: 35px;
+        margin-bottom: 30px;
     }
 
     p,
@@ -245,19 +235,45 @@ ul {
     .tech-stack-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
+        padding-top: 5px;
+        padding-left: 50px;
+    }
+
+    .projects img {
+        margin-bottom: 10px;
+    }
+
+    .projects a {
+        font-size: 1rem;
+        margin-top: 5px;
+        margin-bottom: 35px;
     }
 
     .footer {
-        width: 100%;
-        margin: 0;
-        padding: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        padding: 25px;
+        gap: 7px;
+    }
+
+    .footer h4 {
         font-size: 1rem;
     }
-}
 
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .footer a {
+        font-size: 0.9rem;
+    }
+
+    .location,
+    .email {
+        gap: 6px;
+        margin: 5px;
+    }
+
+}
 
 
 /*-------------------------------------------------------------------------------------------------*/
@@ -275,8 +291,6 @@ ul {
         justify-content: center;
         align-items: center;
     }
-
-    .page-1 {}
 
     .desktop-top-color {
         display: block;
@@ -326,10 +340,25 @@ ul {
 
     /*-------------------- DESKTOP - ABOUT / TECH STACK / PROJECTS / EDUCATION / CONTACT ------------------------*/
 
+    .about,
+    .tech-stack,
+    .projects,
+    .education {
+        width: 800px;
+        margin: 40px;
+        border-top: 4px dotted rgba(161, 117, 255, 0.5);
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
     .about {
         border-top: none;
         max-width: 800px;
-        /* margin-top: 60px; */
         position: absolute;
         bottom: 50px;
     }
@@ -337,21 +366,6 @@ ul {
     .about h3 {
         margin: 0;
         font-size: 1rem;
-    }
-
-    .tech-stack,
-    .projects,
-    .education {
-        margin: 35px 30px 10px 30px;
-        border-top: none;
-        width: 800px;
-        border-top: 3px solid rgba(161, 117, 255, 0.5);
-    }
-
-    h3 {
-        font-size: 1.2rem;
-        margin: 15px;
-        text-align: left;
     }
 
     p,
@@ -363,6 +377,46 @@ ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-}
 
-/* border-top: 3px solid rgba(161, 117, 255, 0.5); */
+    .projects img {
+        margin-bottom: 15px;
+    }
+
+    .projects a {
+        font-size: 1rem;
+        margin-top: 7px;
+        margin-bottom: 45px;
+    }
+
+    .education li {
+        margin-bottom: 25px;
+    }
+
+    /*  */
+
+    .footer {
+        padding: 35px;
+        gap: 7px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer h4 {
+        font-size: 1rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .footer a {
+        font-size: 0.9rem;
+    }
+
+    .location,
+    .email {
+        gap: 6px;
+        margin: 5px;
+    }
+
+}
