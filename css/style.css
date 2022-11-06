@@ -1,23 +1,21 @@
 * {
     box-sizing: border-box;
-    /* outline: 1px solid red; */
     margin: 0;
     font-family: 'Rubik', sans-serif;
-    color: rgb(22, 22, 22);
 }
 
 /*-------------------------------------------- HEADER ---------------------------------------------*/
 
 .header-top {
-    margin: 0;
-    padding: 10px;
+    margin: 0px;
+    padding: 25px;
     display: flex;
     justify-content: center;
-    background: hsla(0, 0%, 100%, 1);
-    background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(276, 100%, 94%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(276, 100%, 94%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(276, 100%, 94%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#F3E1FF", GradientType=1);
+    background: hsla(232, 73%, 65%, 1);
+    background: linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#6274E7", endColorstr="#8752A3", GradientType=1);
 }
 
 .desktop-top-color {
@@ -31,6 +29,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 5px;
+    color: white;
 }
 
 header h1 {
@@ -44,7 +43,7 @@ header h2 {
 
 .profile-picture img {
     border-radius: 50%;
-    border: 4px solid rgb(161, 117, 255);
+    border: 2px solid rgb(255, 255, 255);
     padding: 4px;
     width: 110px;
     height: auto;
@@ -53,14 +52,18 @@ header h2 {
     left: 10px;
 }
 
-
 /*----------------------------------------- SOCIAL LINKS ------------------------------------------*/
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin: 5px;
+    gap: 25px;
+    margin: 30px;
+}
+
+.fa-brands {
+    /*font awesome linkedin and github icons*/
+    color: black;
 }
 
 /*-------------------- ABOUT / TECH STACK / PROJECTS / EDUCATION / FOOTER ------------------------*/
@@ -71,7 +74,7 @@ header h2 {
 .education,
 .footer {
     margin: 30px 15px;
-    border-top: 3px solid rgba(161, 117, 255, 0.5);
+    border-top: 3px solid rgb(124, 45, 184);
 }
 
 h3 {
@@ -141,38 +144,46 @@ ul {
     align-items: center;
     gap: 3px;
     margin: 0;
-    padding: 12px;
+    padding: 20px;
     border-top: none;
-    background-color: rgba(216, 196, 225, 0.8);
+    background: hsla(232, 73%, 65%, 1);
+    background: linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#6274E7", endColorstr="#8752A3", GradientType=1);
+    color: white;
 }
 
 .footer h4 {
-    margin-top: 3px;
     font-style: normal;
-    font-size: 0.75rem;
+    font-weight: normal;
+    font-size: 0.8rem;
+    margin: 10px;
     font-weight: bold;
+    border-bottom: 2px solid white;
 }
 
 .footer p {
     text-decoration: none;
     font-style: normal;
     font-size: 0.7rem;
-    margin: 3px;
 }
 
 .footer a {
     text-decoration: none;
     font-style: normal;
     font-size: 0.7rem;
+    color: white;
 }
 
 .location,
 .email {
     display: flex;
     justify-content: center;
-    gap: 5px;
     margin: 3px;
+    gap: 4px;
 }
+
 
 /*-------------------------------------------------------------------------------------------------*/
 /*--------------------------------- MEDIA QUERIES - TABLET ----------------------------------------*/
@@ -184,6 +195,7 @@ ul {
     /*--------------------------------------------TABLET - HEADER ---------------------------------------------*/
     .header-top {
         gap: 10px;
+        padding: 35px;
     }
 
     .header-headings {
@@ -199,16 +211,9 @@ ul {
     }
 
     .profile-picture img {
-        border: 5px solid rgb(161, 117, 255);
-        padding: 5px;
+        border: 3px solid rgb(255, 255, 255);
         width: 200px;
-        top: 20px;
-    }
-
-    /*---------------------------------------- TABLET - SOCIAL LINKS -------------------------------------------*/
-    .social-links {
-        gap: 25px;
-        margin-top: 20px;
+        top: 5px;
     }
 
     /*-------------------- TABLET - ABOUT / TECH STACK / PROJECTS / EDUCATION / FOOTER ------------------------*/
@@ -218,7 +223,6 @@ ul {
     .projects,
     .education {
         margin: 40px;
-        border-top: 4px dotted rgba(161, 117, 255, 0.5);
     }
 
     h3 {
@@ -233,7 +237,6 @@ ul {
     }
 
     .tech-stack-list {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin: 0;
         padding-top: 5px;
@@ -256,7 +259,7 @@ ul {
     }
 
     .footer h4 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .footer p {
@@ -272,7 +275,6 @@ ul {
         gap: 6px;
         margin: 5px;
     }
-
 }
 
 
@@ -292,6 +294,8 @@ ul {
         align-items: center;
     }
 
+    /*-------------------------------------------- DESKTOP - HEADER ---------------------------------------------*/
+
     .desktop-top-color {
         display: block;
         position: absolute;
@@ -299,14 +303,12 @@ ul {
         left: 0;
         width: 100%;
         height: 100px;
-        background: hsla(0, 0%, 100%, 1);
-        background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(276, 100%, 94%, 1) 100%);
-        background: -moz-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(276, 100%, 94%, 1) 100%);
-        background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(276, 100%, 94%, 1) 100%);
-        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#F3E1FF", GradientType=1);
+        background-size: cover;
+        background-image: url("/images/polygon-background.jpg");
+        /* Source: Image by Sketchepedia on Freepik https://www.freepik.com/free-vector/abstract-polygon-effect-purple-blue-background-multipurpose-design-banner_24261985.htm#query=purple%20banner%20background&position=32&from_view=search&track=sph */
+        background-color: rgb(93, 48, 132);
     }
 
-    /*-------------------------------------------- DESKTOP - HEADER ---------------------------------------------*/
     .header-top {
         background: white;
     }
@@ -324,9 +326,25 @@ ul {
     }
 
     .profile-picture img {
-        border: 6px solid rgb(161, 117, 255);
-        padding: 6px;
+        border: 4px solid rgb(124, 45, 184);
+        padding: 5px;
         width: 300px;
+    }
+
+    /*----------------------------------------- TEXT GRADIENT ANIMATION ----------------------------------------*/
+    /* Source: https://www.codingnepalweb.com/colorful-gradient-text-effect-html-css/ */
+    .gradient {
+        background: linear-gradient(135deg, #33266b 0%, #be14bb 25%, #c28f41 50%, #bd17b4 75%, #40307f 100%);
+        background-size: 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate 30s linear infinite;
+    }
+
+    @keyframes animate {
+        to {
+            background-position: 400%;
+        }
     }
 
     /*---------------------------------------- DESKTOP - SOCIAL LINKS -----------------------------------------*/
@@ -338,6 +356,11 @@ ul {
         gap: 20px;
     }
 
+    .fa-brands {
+        /*font awesome linkedin and github icons*/
+        color: white;
+    }
+
     /*-------------------- DESKTOP - ABOUT / TECH STACK / PROJECTS / EDUCATION / CONTACT ------------------------*/
 
     .about,
@@ -346,11 +369,10 @@ ul {
     .education {
         width: 800px;
         margin: 40px;
-        border-top: 4px dotted rgba(161, 117, 255, 0.5);
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-top: 30px;
         margin-bottom: 40px;
         text-align: left;
@@ -374,7 +396,6 @@ ul {
     }
 
     .tech-stack-list {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -392,17 +413,16 @@ ul {
         margin-bottom: 25px;
     }
 
-    /*  */
-
     .footer {
         padding: 35px;
-        gap: 7px;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 50px;
     }
 
     .footer h4 {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        border-bottom: none;
     }
 
     .footer p {
@@ -419,4 +439,18 @@ ul {
         margin: 5px;
     }
 
+    .fa-solid {
+        /*font awesome location & email icons*/
+        color: white;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*------------------------------- MEDIA QUERIES: REDUCED MOTION -----------------------------------*/
+/*-------------------------------------------------------------------------------------------------*/
+
+@media (prefers-reduced-motion: reduce) {
+    .gradient {
+        animation: none !important;
+    }
 }
